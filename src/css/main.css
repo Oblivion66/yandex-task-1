@@ -1,7 +1,16 @@
-@import url("./page.css");
-@import url("./header.css");
+@import url("./fonts.css");
 
-* {
-    padding: 0;
-    margin: 0;
-}
+@import url("./partials/page.css");
+@import url("./partials/header.css");
+@import url("./partials/container.css");
+@import url("./partials/footer.css");
+@import url("./partials/hero.css");
+@import url("./partials/running-line.css");
+@import url("./partials/support.css");
+@import url("./partials/steps.css");
+@import url("./partials/carousel.css");
+@import url("./partials/carousel-repeat.css");
+@import url("./partials/players.css");
+@import url("./partials/title.css");
+@import url("./partials/button.css");
+@import url("./partials/del.css")

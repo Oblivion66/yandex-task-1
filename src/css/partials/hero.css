@@ -1,6 +1,7 @@
 .hero {
   background-color: #e9ded4;
 
+  background-image: url("../../assets/img/hero__mob-2x.jpg") type("image/jpg") 2x;
   background-image: image-set(
     url("../../assets/img/hero__mob-1x.webp") type("image/webp") 1x,
     url("../../assets/img/hero__mob-2x.webp") type("image/webp") 2x,
@@ -13,6 +14,7 @@
   background-position: bottom;
 
   @media (min-width: 768px) {
+    background-image: url("../../assets/img/hero__pc-2x.jpg") type("image/jpg") 2x;
     background-image: image-set(
       url("../../assets/img/hero__pc-1x.webp") type("image/webp") 1x,
       url("../../assets/img/hero__pc-2x.webp") type("image/webp") 2x,

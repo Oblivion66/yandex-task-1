@@ -6,6 +6,7 @@
     text-transform: uppercase;
 
     @media (min-width: 1024px) {
-        
+        font-size: 54px;
+        line-height: 1.2;
     }
 }

@@ -1,15 +1,9 @@
 {
-    "builds": [
-      {
-        "src": "src/html/index.html",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "/src/html/index.html" }
-    ],
-    "scripts": {
-  "build": "cp -r src/html/* public/ && cp -r src/css public/ && cp -r src/js public/"
+  "builds": [
+    {
+      "src": "src/html/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/src/html/index.html" }]
 }
-
-  }

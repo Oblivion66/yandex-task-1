@@ -95,7 +95,7 @@ module.exports = {
               }
               return './assets/img/[name].[ext]';
             },
-            publicPath: '',  // Относительный путь от HTML к svg
+            publicPath: '',
           }
         }]
       },
@@ -113,7 +113,7 @@ module.exports = {
               }
               return './fonts/[name].[ext]';
             },
-            publicPath: '',  // Относительный путь от HTML к шрифтам
+            publicPath: '',
           }
         }]
       },

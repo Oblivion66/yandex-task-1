@@ -7,7 +7,8 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const isDev = process.env.NODE_ENV === "development";
 const isProd = !isDev;
 
-const filename = (ext) => (isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`);
+const filename = (ext) =>
+  isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
@@ -16,7 +17,7 @@ module.exports = {
   output: {
     filename: `./js/${filename("js")}`,
     path: path.resolve(__dirname, "app"),
-    publicPath: '',
+    publicPath: "",
   },
   devServer: {
     static: {
@@ -62,62 +63,13 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: (resourcePath, context) => {
-                return path.relative(path.dirname(resourcePath), context) + '/';
+                return path.relative(path.dirname(resourcePath), context) + "/";
               },
-            }
+            },
           },
           "css-loader",
         ],
       },
-      {
-        test: /\.(png|jpg|jpeg|webp)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: (resourcePath) => {
-              if (/icons/.test(resourcePath)) {
-                return './assets/icons/[name].[ext]';
-              }
-              return './assets/img/[name].[ext]';
-            },
-            publicPath: '',  // Относительный путь от HTML к изображению
-          }
-        }]
-      },
-      {
-        test: /\.svg$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: (resourcePath) => {
-              if (/icons/.test(resourcePath)) {
-                return './assets/icons/[name].[ext]';
-              }
-              return './assets/img/[name].[ext]';
-            },
-            publicPath: '',
-          }
-        }]
-      },
-      {
-        test: /\.(woff2?|ttf|eot)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: (resourcePath) => {
-              if (/GolosText/.test(resourcePath)) {
-                return './fonts/GolosText/[name].[ext]';
-              }
-              if (/Merriweather/.test(resourcePath)) {
-                return './fonts/Merriweather/[name].[ext]';
-              }
-              return './fonts/[name].[ext]';
-            },
-            publicPath: '',
-          }
-        }]
-      },
     ],
   },
-  
 };

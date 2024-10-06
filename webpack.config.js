@@ -51,7 +51,11 @@ module.exports = {
     }),
   ],
   module: {
-    rules: [
+    rules: [{
+        test: /\.js$/,
+        use: 'babel-loader',
+        exclude: '/node_modules/'
+    },
       {
         test: /\.html$/,
         loader: "html-loader",
@@ -70,11 +74,6 @@ module.exports = {
           "css-loader",
         ],
       },
-    //   {
-    //     test: /\.js$/,
-    //     exclude: /node_modules/,
-    //     use: ['babel-loader'],
-    //   }
     ],
   },
 };

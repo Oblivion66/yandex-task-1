@@ -111,7 +111,7 @@
     background-image: image-set(
       url("../../assets/img/steps-background__mob-1x.webp") type("image/webp") 1x,
       url("../../assets/img/steps-background__mob-2x.webp") type("image/webp") 2x,
-      url(".../../assets/img/steps-background__mob-1x.jpg") type("image/jpg") 1x,
+      url("../../assets/img/steps-background__mob-1x.jpg") type("image/jpg") 1x,
       url("../../assets/img/steps-background__mob-2x.jpg") type("image/jpg") 2x
     );
     background-size: cover;
@@ -128,7 +128,7 @@
           1x,
         url("../../assets/img/steps-background-1__pc-2x.webp") type("image/webp")
           2x,
-        url(".../../assets/img/steps-background-1__pc-1x.jpg") type("image/jpg")
+        url("../../assets/img/steps-background-1__pc-1x.jpg") type("image/jpg")
           1x,
         url("../../assets/img/steps-background-1__pc-2x.jpg") type("image/jpg") 2x
       );
@@ -147,7 +147,7 @@
         1x,
       url("../../assets/img/steps-background-2__pc-2x.webp") type("image/webp")
         2x,
-      url(".../../assets/img/steps-background-2__pc-1x.jpg") type("image/jpg")
+      url("../../assets/img/steps-background-2__pc-1x.jpg") type("image/jpg")
         1x,
       url("../../assets/img/steps-background-2__pc-2x.jpg") type("image/jpg") 2x
     );
@@ -162,7 +162,7 @@
           type("image/webp") 1x,
         url("../../assets/img/steps-background-2__pc-2x.webp")
           type("image/webp") 2x,
-        url(".../../assets/img/steps-background-2__pc-1x.jpg") type("image/jpg")
+        url("../../assets/img/steps-background-2__pc-1x.jpg") type("image/jpg")
           1x,
         url("../../assets/img/steps-background-2__pc-2x.jpg") type("image/jpg")
           2x

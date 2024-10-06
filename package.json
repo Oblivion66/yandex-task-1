@@ -1,8 +1,11 @@
 {
+  "homepage": "http://oblivion66.github.io/yandex-task-1",
   "name": "yandex-task",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "start": "cross-env  NODE_ENV=development webpack serve --mode development"
